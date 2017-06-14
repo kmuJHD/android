@@ -6,10 +6,10 @@
 		$sql = "select * from Music";
 		$result = mysqli_query($connect, $sql);
 		$num = mysqli_num_rows($result);
-    
-    while ($field = $result->fetch_assoc()) {
-      echo $field["name"]."\n";
-    }
+
+	    	while ($field = $result->fetch_assoc()) {
+	      		echo $field["name"]."\n";
+	    	}
 
 	}
 ?>
